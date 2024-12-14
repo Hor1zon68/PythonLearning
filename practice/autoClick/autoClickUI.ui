@@ -9,9 +9,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>966</width>
+    <height>760</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>AutoClickUI</string>
@@ -20,9 +26,9 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>70</y>
-      <width>54</width>
+      <x>380</x>
+      <y>80</y>
+      <width>86</width>
       <height>12</height>
      </rect>
     </property>
@@ -38,7 +44,7 @@
      <rect>
       <x>230</x>
       <y>130</y>
-      <width>101</width>
+      <width>132</width>
       <height>31</height>
      </rect>
     </property>
@@ -58,9 +64,9 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>450</x>
       <y>130</y>
-      <width>101</width>
+      <width>118</width>
       <height>31</height>
      </rect>
     </property>
@@ -76,7 +82,7 @@
      <rect>
       <x>410</x>
       <y>180</y>
-      <width>142</width>
+      <width>181</width>
       <height>169</height>
      </rect>
     </property>
@@ -108,7 +114,7 @@
         <bool>true</bool>
        </property>
        <property name="orientation">
-        <enum>Qt::Vertical</enum>
+        <enum>Qt::Orientation::Vertical</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
@@ -145,7 +151,7 @@
         <bool>true</bool>
        </property>
        <property name="orientation">
-        <enum>Qt::Vertical</enum>
+        <enum>Qt::Orientation::Vertical</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
@@ -190,17 +196,17 @@
      </item>
     </layout>
    </widget>
-   <widget class="QPushButton" name="startBotton">
+   <widget class="QPushButton" name="startMouseBotton">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>220</x>
       <y>390</y>
-      <width>75</width>
-      <height>23</height>
+      <width>101</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>Start</string>
+     <string>startMouse</string>
     </property>
    </widget>
    <widget class="QWidget" name="layoutWidget">
@@ -211,7 +217,7 @@
      <rect>
       <x>200</x>
       <y>180</y>
-      <width>142</width>
+      <width>181</width>
       <height>169</height>
      </rect>
     </property>
@@ -249,7 +255,7 @@
         <bool>true</bool>
        </property>
        <property name="orientation">
-        <enum>Qt::Vertical</enum>
+        <enum>Qt::Orientation::Vertical</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
@@ -278,12 +284,12 @@
          </property>
          <item>
           <property name="text">
-           <string>左键</string>
+           <string>left</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>右键</string>
+           <string>right</string>
           </property>
          </item>
         </widget>
@@ -296,7 +302,7 @@
         <bool>true</bool>
        </property>
        <property name="orientation">
-        <enum>Qt::Vertical</enum>
+        <enum>Qt::Orientation::Vertical</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
@@ -341,14 +347,27 @@
      </item>
     </layout>
    </widget>
+   <widget class="QPushButton" name="startKeyBotton">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>390</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>startKey</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>22</height>
+     <width>966</width>
+     <height>33</height>
     </rect>
    </property>
   </widget>
@@ -383,8 +402,8 @@
      <y>161</y>
     </hint>
     <hint type="destinationlabel">
-     <x>494</x>
-     <y>214</y>
+     <x>588</x>
+     <y>231</y>
     </hint>
    </hints>
   </connection>
@@ -399,8 +418,8 @@
      <y>168</y>
     </hint>
     <hint type="destinationlabel">
-     <x>492</x>
-     <y>288</y>
+     <x>576</x>
+     <y>301</y>
     </hint>
    </hints>
   </connection>
@@ -431,8 +450,8 @@
      <y>169</y>
     </hint>
     <hint type="destinationlabel">
-     <x>488</x>
-     <y>281</y>
+     <x>572</x>
+     <y>301</y>
     </hint>
    </hints>
   </connection>
@@ -443,8 +462,8 @@
    <slot>setDisabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>437</x>
-     <y>171</y>
+     <x>467</x>
+     <y>186</y>
     </hint>
     <hint type="destinationlabel">
      <x>521</x>
@@ -463,8 +482,8 @@
      <y>162</y>
     </hint>
     <hint type="destinationlabel">
-     <x>288</x>
-     <y>213</y>
+     <x>378</x>
+     <y>231</y>
     </hint>
    </hints>
   </connection>
@@ -507,12 +526,12 @@
    <slot>setEnabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>429</x>
-     <y>169</y>
+     <x>459</x>
+     <y>186</y>
     </hint>
     <hint type="destinationlabel">
-     <x>336</x>
-     <y>207</y>
+     <x>378</x>
+     <y>231</y>
     </hint>
    </hints>
   </connection>
@@ -539,8 +558,8 @@
    <slot>setEnabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>437</x>
-     <y>160</y>
+     <x>467</x>
+     <y>186</y>
     </hint>
     <hint type="destinationlabel">
      <x>314</x>
@@ -548,5 +567,105 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>mouseButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>startMouseBotton</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>261</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>232</x>
+     <y>428</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mouseButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>startKeyBotton</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>360</x>
+     <y>174</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>494</x>
+     <y>426</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>keyBotton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>startKeyBotton</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>559</x>
+     <y>174</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>544</x>
+     <y>425</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>keyBotton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>startMouseBotton</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>460</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>430</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>startMouseBotton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>startMouseClickslot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>291</x>
+     <y>440</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>588</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>startKeyBotton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>startKeyClickslot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>538</x>
+     <y>437</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>592</x>
+     <y>574</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
+ <slots>
+  <slot>startMouseClickslot()</slot>
+  <slot>startKeyClickslot()</slot>
+ </slots>
 </ui>

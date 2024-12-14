@@ -98,7 +98,7 @@ class AutoClick(object):
 
 if __name__ == '__main__':
     autoclick = AutoClick()
-
+    autoclick.mouse_click(10,'left',0.1)
     # keyboard_listener.join()#阻断式监听
     # 除了最后一个监听器外，其他监听器不能用listener.join()
     # 的方式启动，只能用非阻塞的listener.start()
